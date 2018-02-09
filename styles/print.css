@@ -1,0 +1,59 @@
+/* File: print.css                  *
+ * Project: ITW 2                   *
+ * Author: Martin Ivanco (xivanc03) */
+
+/************ PRINT STYLE ************/
+@media only print {
+
+/****** BASIC BODY AND CONTENT ******/
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.content {
+	max-width: 900px;
+	margin: auto;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+button {
+	display: inline-block;
+	border: none;
+	background-color: transparent;
+	color: inherit;
+	text-align: center;
+	text-decoration: none;
+	font-size: inherit;
+}
+section {
+	padding: 5px
+}
+h2 {
+	margin: 0;
+	padding: 15px 0;
+}
+#main p {
+	margin: 0;
+	padding-bottom: 15px;
+}
+
+/********** WELCOME & MENU **********/
+#welcome {
+	display: none;
+}
+#menu {
+	display: none;
+}
+
+/************** FOOTER **************/
+.social {
+	display: none;
+}
+.copyright p {
+	margin: 15px 0;
+	text-align: center;
+}
+
+}

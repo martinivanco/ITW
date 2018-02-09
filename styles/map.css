@@ -1,0 +1,16 @@
+/* File: map.css                    *
+ * Project: ITW 2                   *
+ * Author: Martin Ivanco (xivanc03) */
+
+@import url("base.css");
+
+@media only screen {
+
+#main section {
+	padding-top: 60px;
+}
+#main section a:hover {
+	text-decoration: underline;
+}
+
+}

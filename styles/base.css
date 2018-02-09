@@ -1,0 +1,181 @@
+/* File: base.css                   *
+ * Project: ITW 2                   *
+ * Author: Martin Ivanco (xivanc03) */
+
+@import url("print.css");
+
+@media only screen {
+
+/******* BASIC BODY AND CONTENT *******/
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.content {
+	max-width: 900px;
+	margin: auto;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+button {
+	display: inline-block;
+	border: none;
+	background-color: transparent;
+	color: inherit;
+	text-align: center;
+	text-decoration: none;
+	font-size: inherit;
+}
+#main {
+	background-color: #ffece3;
+}
+section {
+	padding: 5px
+}
+h2 {
+	margin: 0;
+	padding: 15px 0;
+}
+#main p {
+	margin: 0;
+	padding-bottom: 15px;
+}
+.print {
+	display: none;
+}
+
+/************** WELCOME **************/
+#welcome {
+	margin-bottom: -5px;
+}
+#welcome img {
+	width: 100%;
+	box-shadow: 0px 2px 5px grey;
+}
+
+/**************** MENU ****************/
+#menu {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 55px;
+	z-index: 2;
+	font-size: 18px;
+	background-color: rgba(139, 195, 74, 0.8);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+}
+#sections, #languages {
+	display: inline-block;
+}
+#sections {
+	margin-right: 270px; 
+}
+#logo {
+	display: inline-block;
+	margin: -10px 0;
+	padding-top: 1px;
+	height: 40px;
+}
+#sections a {
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px 5px;
+	color: white;
+	transition: 0.2s;
+}
+#sections a:hover {
+	text-shadow: 1px 1px 3px grey;
+}
+#menu button {
+	display: inline-block;
+	padding: 15px 5px;
+	color: white;
+	transition: 0.2s;
+}
+#menu button:hover {
+	text-shadow: 1px 1px 3px grey;
+}
+.dropdown {
+	display: inline-block;
+}
+.dropdown-content {
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-20px);
+	position: absolute;
+	padding: 0 5px;
+	z-index: 2;
+	background-color: rgba(205, 220, 57, 0.8);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+	transition: 0.4s;
+}
+.dropdown:hover .dropdown-content {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0%);
+}
+#sections .dropdown a {
+	display: block;
+	padding: 10px 7px;
+}
+#languages {
+	padding-right: 10px;
+	background-image: url('../images/misc/arrowrightwh.png');
+	background-position: right center;
+	background-size: 13px;
+	background-repeat: no-repeat; 
+}
+#languages:hover {
+	background-image: url('../images/misc/arrowdownwh.png');
+}
+#languages .dropdown-content button {
+	display: block;
+	padding: 7px 7px;
+}
+
+/************** FOOTER **************/
+footer {
+	background-color: #f1d8cf;
+	padding: 20px;
+	padding-bottom: 5px;
+}
+.contact {
+	display: inline-block;
+	width: 400px;
+	padding-left: 50px; 
+	border-right: 1px solid black;
+}
+.social {
+	display: inline-block;
+	padding-left: 50px; 
+	vertical-align: top;
+}
+.slogo {
+	display: inline-block;
+	margin-right: 7px;
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+	transition: 0.2s;
+}
+.slogo:hover {
+	opacity: 0.7;
+}
+#maplink {
+	margin-top: 50px;
+}
+#maplink:hover {
+	opacity: 0.7;
+}
+.copyright {
+	margin-bottom: -10px;
+}
+.copyright p {
+	margin: 15px 0;
+	padding: 0;
+	text-align: center;
+}
+
+}

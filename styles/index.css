@@ -1,0 +1,77 @@
+/* File: index.css                  *
+ * Project: ITW 2                   *
+ * Author: Martin Ivanco (xivanc03) */
+
+@import url("base.css");
+
+@media only screen {
+
+/******* ATTRACTION CONTAINERS *******/
+.imagelink {
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	margin: 23px;
+}
+.imagelink img {
+	display: block;
+	width: 250px;
+	height: 250px;
+}
+.imagetext {
+	display: block;
+	width: 250px;
+	height: 235px;
+	position: relative;
+	bottom: 250px;
+	padding-top: 15px;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	transition: 0.5s;
+}
+.imagelink:hover .imagetext {
+	height: 50px;
+}
+#waterjungle {
+	background-color: #2196f3;
+}
+#darkforest {
+	background-color: #558b2f;
+}
+#sunnymountain {
+	background-color: #ffeb3b;
+}
+
+/*************** NEWS ***************/
+#newstitle {
+	display: inline-block;
+	padding-right: 20px;
+	background-image: url("../images/misc/arrowdownbk.png");
+	background-size: 15px;
+	background-position: right center;
+	background-repeat: no-repeat;
+	cursor: default;
+	opacity: 1;
+	transition: 0.3s;
+}
+#newstitle:hover {
+	opacity: 0.7;
+}
+#newscontent {
+	display: block;
+}
+
+}
+
+@media only print {
+
+/******* ATTRACTION CONTAINERS *******/
+.imagelink {
+	margin: 15px;
+}
+.imagelink img {
+	display: none;
+}
+
+}

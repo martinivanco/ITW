@@ -1,0 +1,87 @@
+/* File: attractions.css            *
+ * Project: ITW 2                   *
+ * Author: Martin Ivanco (xivanc03) */
+
+@import url("base.css");
+
+@media only screen {
+
+/************** GALLERY **************/
+#activepic {
+	display: block;
+	height: 400px;
+	width: auto;
+	margin: auto;
+	margin-bottom: 5px;
+}
+.picture {
+	display: inline-block;
+	margin: 10px 0;
+	padding: 0;
+	height: 100px;
+}
+.picture img {
+	height: 100%;
+	width: auto;
+	transition: 0.3s;
+}
+.picture:hover img {
+	opacity: 0.7;
+}
+#mainpic {
+	display: block;
+	height: 400px;
+	width: auto;
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+/************** SUBMENU **************/
+#submenu {
+	display: inline-block;
+	position: relative;
+	bottom: 2px;
+	border-radius: 0px 0px 20px 20px;
+	margin-left: 500px;
+	padding: 0 10px;
+	background-color: rgba(205, 220, 57, 0.8);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
+	transition: 0.5s all;
+}
+#submenu a {
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 7px;
+	color: white;
+	transition: 0.2s;
+}
+#submenu a:hover {
+	text-shadow: 1px 1px 3px grey;
+}
+
+}
+
+@media only print {
+
+/************** GALLERY **************/
+#activepic {
+	display: none;
+}
+.picture {
+	display: inline-block;
+	margin: 0px -10px;
+	height: 150px;
+}
+.picture img {
+	height: 100%;
+	width: auto;
+}
+#mainpic {
+	display: block;
+	height: 350px;
+	width: auto;
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+}
