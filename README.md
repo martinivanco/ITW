@@ -1,2 +1,2 @@
 # Webapage for a fictional fun park
-ITW Project - Webpage for a fictional fun park. The task was to create a webpage for a fictional fun park featuring some information about it.
+Project made as a part of the course Web Design at Brno University of Technology. The task was to create a webpage for a fictional fun park featuring some information about it.
